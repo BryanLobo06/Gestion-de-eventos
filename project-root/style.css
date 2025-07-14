@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(120deg, #101cc2 0%, #000000cb 100%);
+  min-height: 100vh;
+}
+nav {
+  background: #222;
+  padding: 1em 2em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1.2em;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+nav a:hover, nav a.active {
+  background: #0f12d8;
+  color: #222;
+}
+main#app {
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2.5em 2em;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+h1, h2, h3 {
+  color: #1f0bd6;
+  margin-top: 0;
+}
+ul#eventos-list, ul#admin-eventos-list, ul {
+  list-style: none;
+  padding: 0;
+}
+ul#eventos-list li, ul#admin-eventos-list li {
+  background: #fff7f0;
+  margin-bottom: 1.2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(253,160,133,0.08);
+  padding: 1.2em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+ul#eventos-list li:hover, ul#admin-eventos-list li:hover {
+  box-shadow: 0 4px 16px rgba(253,160,133,0.18);
+}
+button, .btn-registrar, .btn-editar-evento, .btn-eliminar-evento, .btn-editar-asistente, .btn-eliminar-asistente, .btn-editar-lugar, .btn-eliminar-lugar {
+  background: #101cc2;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5em 1.2em;
+  margin-left: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(253,160,133,0.08);
+}
+button:hover, .btn-registrar:hover, .btn-editar-evento:hover, .btn-eliminar-evento:hover, .btn-editar-asistente:hover, .btn-eliminar-asistente:hover, .btn-editar-lugar:hover, .btn-eliminar-lugar:hover {
+  background: #101cc2;
+  color: #222;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+form input, form select {
+  padding: 0.7em 1em;
+  border: 1px solid #101cc2;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #fff7f0;
+  transition: border 0.2s;
+}
+form input:focus, form select:focus {
+  border: 1.5px solid #101cc2;
+  outline: none;
+}
+#login-error, #registro-error {
+  margin-top: 0.5em;
+  color: #d32f2f;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  main#app {
+    padding: 1em 0.5em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  ul#eventos-list li, ul#admin-eventos-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em 0.7em;
+  }
+}

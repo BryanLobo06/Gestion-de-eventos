@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "visitante",
+      "password": "visitante123",
+      "role": "visitor"
+    },
+    {
+      "id": "3",
+      "username": "bryan",
+      "password": "1111",
+      "role": "visitor"
+    },
+    {
+      "id": "4",
+      "username": "asas",
+      "password": "1111",
+      "role": "visitor"
+    }
+  ],
+  "events": [
+    {
+      "id": "2",
+      "name": "canto",
+      "date": "2025-07-23",
+      "placeId": 2,
+      "attendees": [
+        "0df8",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Concierto",
+      "date": "2025-07-22",
+      "placeId": 1,
+      "attendees": [
+        "1",
+        "0df8",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "carnaval",
+      "date": "2025-07-30",
+      "placeId": 3,
+      "attendees": [
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "1",
+      "name": "Auditorio",
+      "capacity": 100
+    },
+    {
+      "id": "2",
+      "name": "plaza",
+      "capacity": 100
+    },
+    {
+      "id": "3",
+      "name": "hipodromo",
+      "capacity": 500
+    },
+    {
+      "id": "4",
+      "name": "Barrio",
+      "capacity": 150
+    }
+  ],
+  "attendees": [
+    {
+      "id": "1",
+      "name": "Juan Pérez",
+      "email": "juan@email.com"
+    },
+    {
+      "id": "2",
+      "name": "njnjn",
+      "email": "be@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "hhj",
+      "email": "jnj@gmai.com"
+    }
+  ]
+}

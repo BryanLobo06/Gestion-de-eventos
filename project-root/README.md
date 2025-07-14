@@ -117,3 +117,12 @@ New visitors must register before they can log in.
 - json-server doesn't implement real relationships, so the relationship between events and attendees is managed manually on the frontend.
 - If you're having trouble with the API, make sure json-server is running and that port 3000 is free.
 - You can customize styles in `styles.css`.
+
+---
+
+## Autor
+
+- Brayan Enrique Balcazar lobo
+- Clan Macondo
+- bryanbalcazar307@gmail.com
+
